@@ -6,6 +6,11 @@
 //     "Hello"
 // )
 
+/* The code snippet is creating a root element for the HTML document. It defines an object
+`rootelement` with a type of "div" and props containing an id of "root". Then, it creates a new HTML
+element using `document.createElement` with the type specified in `rootelement.type` (which is
+"div") and sets its id to the value specified in `rootelement.props.id` (which is "root"). This root
+element will serve as the container for other elements that will be added to the document. */
 const rootelement = {
     type: "div",
     props: {
