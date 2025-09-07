@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: #2DB1A6;
+    --gradient-color: #239188;
+    --pixel-size: 16px;
+    --white: #f7f4f4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    font-size: var(--pixel-size);
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--gradient-color), var(--primary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.root {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #FFFFFF;
+    width:40vw;
+    height: 95vh;
+    max-height: 95vh;
+    border-radius: 1rem;
+    box-shadow: 0 0 90px 20px rgba(0, 0, 0, 0.3);
+}
+
+.operation-div {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 40vh;
+}
+
+.execute {
+    grid-column: 3 / span 2;
+    border-radius: 0 0 1rem 0;
+}
+
+button {
+    border-radius: 0;
+    /* border: 1px solid #989a9b; */
+    border: 0;
+    background-color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.zero {
+    border-radius: 0 0 0 1rem;
+}
+
+.operator {
+    font-size: 2rem;
+}
+
+.previous {
+    color: #2DB1A6;
+    font-size: 1.5rem;
+}
+
+.current {
+    color: black;
+    font-size: 5.5rem;
+}
+
+.right {
+    background-color: #2DB1A6;
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.top {
+    color: var(--primary-color);
+}
